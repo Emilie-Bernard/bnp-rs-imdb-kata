@@ -1,0 +1,89 @@
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-image: linear-gradient(#494848, #000000);
+}
+.logo {
+  padding-left: 32px;
+  padding-right: 40px;
+}
+
+.search {
+  width: 70%;
+}
+
+.icon-mobile {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.bar {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.icon {
+  width: 13px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flags {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+  padding-right: 10px;
+  gap: 10px;
+}
+
+.is-desactivated {
+  opacity: 0.5;
+}
+
+.search-mobile-active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0px 15px;
+}
+
+.bar-mobile {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.bar-mobile, select, textarea{
+    color: white;
+    font-size: large;
+}
+.bar-mobile::placeholder{
+  color: white;
+}
+
+.icon-mobile-activated {
+  display: flex;
+  justify-content: end;
+}

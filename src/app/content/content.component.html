@@ -1,0 +1,6 @@
+<mat-grid-list class="list" cols="{{!isMobile ? 3 : 1}}" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let movie of movies">
+        <app-card [movie]="movie">
+        </app-card>
+    </mat-grid-tile>
+</mat-grid-list>

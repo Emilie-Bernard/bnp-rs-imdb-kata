@@ -1,0 +1,52 @@
+<div class="card">
+    <div class="left">
+        <div class="header">
+            <div class="title">
+                {{movie?.primaryTitle}}
+                <div><img class="icon" src="assets/icon_pencil.svg" /></div>
+            </div>
+            {{movie?.originalTitle}}
+        </div>
+        <div class="data">
+            <div class="data-box">
+                <div class="data-title">
+                    ID
+                </div>
+                {{movie?.id}}
+            </div>
+            <div class="data-box">
+                <div class="data-title">
+                    Minutes
+                </div>
+                {{movie?.runtimeMinutes}}
+            </div>
+            <div class="data-box">
+                <div class="data-title">
+                    Start Year
+                </div>
+                {{movie?.startYear}}
+            </div>
+            <div class="data-box">
+                <div class="data-title">
+                    End Year
+                </div>
+                {{movie?.endYear}}
+            </div>
+            <div class="data-box">
+                <div class="data-title">
+                    Is adult
+                </div>
+                {{movie?.isAdult}}
+            </div>
+            <div class="data-box">
+                <div class="data-title">
+                    Genres
+                </div>
+                {{movie?.genres}}
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <img class="image" src="assets/icon_poster.svg" />
+    </div>
+</div>
