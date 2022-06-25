@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1484691810377259440" datatype="html">
+        <source> ID </source>
+        <target> ID </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/card/card.component.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7952303717918806517" datatype="html">
+        <source> Minutes </source>
+        <target> Minutes </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/card/card.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7139706298513206310" datatype="html">
+        <source> Start Year </source>
+        <target> Année de début </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/card/card.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5132635046245421395" datatype="html">
+        <source> End Year </source>
+        <target> Année de fin </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/card/card.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3038652553070443276" datatype="html">
+        <source> Is adult </source>
+        <target> Pour adulte </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/card/card.component.html</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8653396605289108078" datatype="html">
+        <source> Genres </source>
+        <target> Genres </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/card/card.component.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1651482974247538887" datatype="html">
+        <source>Search a movie...</source>
+        <target> Rechercher un film... </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/topbar/topbar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/topbar/topbar.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

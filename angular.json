@@ -4,6 +4,10 @@
   "newProjectRoot": "projects",
   "projects": {
     "emilie-bernard-bnp-imdb-kata": {
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {"fr": "src/locale/messages.fr.xlf"}
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": ["fr"],
             "outputPath": "dist/emilie-bernard-bnp-imdb-kata",
             "index": "src/index.html",
             "main": "src/main.ts",

@@ -1,0 +1,9 @@
+{
+  "SEARCH": "Rechercher un film...",
+  "ID": "ID",
+  "MINUTES": "Minutes",
+  "START_YEAR": "Année de début",
+  "END_YEAR": "Année de fin",
+  "IS_ADULT": "Pour adulte",
+  "TYPE": "Genres"
+}

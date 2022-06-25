@@ -2,7 +2,7 @@
     <div class="toolbar" *ngIf="!searchActiveMobile; else searchMobileActive"><img class="logo" src="assets/logo.svg"/>
     <div *ngIf="!isMobile; else searchMobile" class="search">
         <form class="form" >
-                <input type="text" [ngModel]="searchTitle" (ngModelChange)="modelChangeFn($event)" name="first" class="form-control rounded bar" placeholder="Search a movie..." />
+                <input type="text" [ngModel]="searchTitle" (ngModelChange)="modelChangeFn($event)" name="first" class="form-control rounded bar" placeholder="{{'SEARCH' | translate}}" />
                 <span class="input-group-text border-0 icon" id="search-addon">
                     <img class="icon" src="assets/icon_magnify.svg" />
                 </span>
@@ -26,17 +26,17 @@
     </span>
 </ng-template>
     <div class="flags">
-        <div class="{{english && 'is-desactivated'}}">
+        <div (click)="onChangeLanguage(false)" [ngClass]="{'is-desactivated':english}">
             <img width="15px" height="10px" src="assets/flag_fr.svg" />
         </div>
-        <div class="{{!english && 'is-desactivated'}}">
+        <div (click)="onChangeLanguage(true)" [ngClass]="{'is-desactivated':!english}">
             <img width="15px" height="10px" src="assets/flag_usa.svg" />
         </div>
     </div>
 </div>
 <ng-template #searchMobileActive class="search-mobile-active">
     <form class="search-mobile-active" [ngModel]="searchTitle" (ngModelChange)="modelChangeFn($event)" >
-    <input type="text" class="form-control rounded bar-mobile" placeholder="Search a movie..." />
+    <input type="text" class="form-control rounded bar-mobile" placeholder="{{'SEARCH' | translate}}" />
     <span (click)="onActivate()" class="input-group-text border-0 icon-mobile-activated" id="search-addon">
         <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
