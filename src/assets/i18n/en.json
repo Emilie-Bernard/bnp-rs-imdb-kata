@@ -5,5 +5,6 @@
   "START_YEAR": "Start year",
   "END_YEAR": "End year",
   "IS_ADULT": "Is adult",
-  "TYPE": "Genres"
+  "TYPE": "Genres",
+  "EDITING": "Editing"
 }

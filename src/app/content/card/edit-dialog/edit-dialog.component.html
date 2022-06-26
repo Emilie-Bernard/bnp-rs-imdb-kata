@@ -1,0 +1,43 @@
+<div class="title">
+<h2 class="text-title" mat-dialog-title>{{'EDITING' | translate}}</h2>
+<div class="icon-title" (click)="onNoClick()"><img class="icon" src="assets/X_icon.svg" /></div>
+</div>
+<div mat-dialog-content class="form">
+    <mat-form-field style="width:100%">
+    <div class="data">
+        <p class="form-title">{{'IS_ADULT' | translate}}</p>
+        <div  class="data-check">
+            <mat-checkbox [checked]="data.isAdult === true" (change)="changeIsAdult(true)"  class="check">Yes</mat-checkbox>
+            <mat-checkbox [checked]="data.isAdult === false" (change)="changeIsAdult(false)"  class="check">No</mat-checkbox>
+        </div>
+    </div>
+    <div class="data">
+        <p class="form-title">{{'MINUTES' | translate}}</p>
+        <input class="form-input" type="number" matInput [ngModel]="data.runtimeMinutes" (ngModelChange)="modelChangeMinutes($event)" />
+    </div>
+    <div class="data">
+        <p class="form-title">{{'START_YEAR' | translate}}</p>
+        <mat-select class="form-select" [placeholder]="startYear" [(ngModel)]="startYear" (selectionChange)="onChangeEndDate($event)">
+            <mat-option *ngFor="let year of years" [value]="year">{{ year }}</mat-option>
+        </mat-select>
+    </div>
+    <div class="data">
+        <p class="form-title">{{'END_YEAR' | translate}}</p>
+        <mat-select class="form-select" [placeholder]="endYear" [(ngModel)]="endYear" (selectionChange)="onChangeEndDate($event)">
+            <mat-option [value]="year"*ngFor="let year of years">{{ year }}</mat-option>
+        </mat-select>
+    </div>
+    <div class="data">
+        <p class="form-title">{{'TYPE' | translate}}</p>
+        <mat-select class="form-select" [(ngModel)]="typeSelected" multiple (selectionChange)="onChangeType($event)" placeholder="typeSelected">
+            <mat-option *ngFor="let type of typeList; let i =index" [value]="type">
+                {{ type }}
+            </mat-option>
+        </mat-select>
+    </div>
+</mat-form-field>
+</div>
+<div mat-dialog-actions class="buttons">
+    <button class="valid" mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+    <button class="cancel" mat-button (click)="onNoClick()">No Thanks</button>
+</div>
